@@ -60,10 +60,10 @@ def analysis(code): #Analyse a list to ease the answering system
                 missing = False
         if missing:
             L.append([code[k],1])
-    return L
+    return L #Here L is a list of lists, the latter being the digit and the amount of times it is featured in the code
 
 
-def status(tent,code): #Return the game's answer to tent, and if the code has been found
+def status(tent,code): #Returns the game's answer to tent, and if the code has been found
     T = analysis(tent)
     C = analysis(code)
     right = 0
